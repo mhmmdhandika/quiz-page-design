@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Fredoka', sans-serif;
+  background-color: #202849;
+}
+
+main {
+  border: 5px solid white;
+  max-width: 500px;
+  border-radius: 15px;
+}
+
+main header {
+  background: rgb(255, 44, 81);
+  background: linear-gradient(90deg, rgba(255, 44, 81, 1) 48%, rgba(38, 171, 255, 1) 100%);
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  border-bottom: white solid 5px;
+}
+
+.container {
+  padding: 1.5em;
+}
+
+main header .container h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: white;
+}
+
+main button {
+  margin-top: 0.8em;
+  padding: 0.5em;
+  font-family: 'Fredoka', sans-serif;
+  text-align: left;
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+.choice {
+  color: white;
+  border: 3px solid white;
+  border-radius: 30px;
+  padding: 15px 23px;
+  background-color: transparent;
+  transition: 0.5s;
+}
+
+.choice div {
+  width: 1.7em;
+  height: 1.7em;
+  display: inline-flex;
+  background-color: rgba(38, 171, 255, 1);
+  margin: 0 0.5em 0 0;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.not-selected:hover {
+  background-color: white;
+  color: #202849;
+}
+
+@-webkit-keyframes shake {
+
+  0%,
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg) translateY(0);
+  }
+
+  15%,
+  35%,
+  55%,
+  75%,
+  95% {
+    -webkit-transform: translateX(-1px) rotate(-2deg);
+  }
+
+  25%,
+  45%,
+  65%,
+  85% {
+    -webkit-transform: translateX(1px) rotate(2deg);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateY(1px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateY(-1px);
+  }
+}
+
+@-moz-keyframes shake {
+
+  0%,
+  100% {
+    -moz-transform: translateX(0) rotate(0deg) translateY(0);
+  }
+
+  15%,
+  35%,
+  55%,
+  75%,
+  95% {
+    -moz-transform: translateX(-1px) rotate(-2deg);
+  }
+
+  25%,
+  45%,
+  65%,
+  85% {
+    -moz-transform: translateX(1px) rotate(2deg);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -moz-transform: translateY(1px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -moz-transform: translateY(-1px);
+  }
+}
+
+@-o-keyframes shake {
+
+  0%,
+  100% {
+    -o-transform: translateX(0) rotate(0deg) translateY(0);
+  }
+
+  15%,
+  35%,
+  55%,
+  75%,
+  95% {
+    -o-transform: translateX(-1px) rotate(-2deg);
+  }
+
+  25%,
+  45%,
+  65%,
+  85% {
+    -o-transform: translateX(1px) rotate(2deg);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -o-transform: translateY(1px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -o-transform: translateY(-1px);
+  }
+}
+
+@keyframes shake {
+
+  0%,
+  100% {
+    transform: translateX(0) rotate(0deg) translateY(0);
+  }
+
+  15%,
+  35%,
+  55%,
+  75%,
+  95% {
+    transform: translateX(-1px) rotate(-2deg);
+  }
+
+  25%,
+  45%,
+  65%,
+  85% {
+    transform: translateX(1px) rotate(2deg);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateY(1px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateY(-1px);
+  }
+}
+
+.shake {
+  -webkit-animation-name: shake;
+  -moz-animation-name: shake;
+  -o-animation-name: shake;
+  animation-name: shake;
+  -webkit-animation-duration: 0.75s;
+  -moz-animation-duration: 0.5s;
+  -o-animation-duration: 05s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-transition-timing-function: linear;
+}
+
+/* the answer */
+.a-answer {
+  background-color: red;
+}
+
+.a-circle-style {
+  background-color: transparent !important;
+  border: 2px solid white;
+}
+
+.b-answer {
+  opacity: 0.6;
+}
+
+.b-circle-style {
+  background-color: transparent !important;
+  border: 2px solid white;
+}
+
+.c-answer {
+  transition: 0.2s;
+}
+
+.d-answer {
+  background-color: rgb(0, 172, 0);
+}
+
+/* the end of answer */
