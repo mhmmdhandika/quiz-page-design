@@ -269,3 +269,9 @@ main button {
 }
 
 /* the end of answer */
+
+@media (max-width: 576px) {
+  main {
+    width: 85%;
+  }
+}
